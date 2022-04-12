@@ -2,29 +2,44 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/javascript/apps.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentalista</title>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="page-title">Mentalista</h1>
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
-      alt="" /><br />
-    <p class="page-subtitle">Digite um número de 0 a 10</p>
-    <p id="tentativas-label">Número de tentativas:</p>
-    <p id="tentativas"></p>
-    <input type="number" id="valor" /><br />
-    <button type="submit" onclick="chutar()">Chutar</button>
-    <h2 class="resultado" id="resultado"></h2>
-  </div>
-  <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo" />
-  </a>
+  <!-- <section>
+    <div class="main2">
+      <p class="top_text" id="texto_jogo">Escolha um numero de 0 a 10!</p>
+      <input type="number" id="tentativa" placeholder="Tentativa">
+      <button id="try" class="glow-on-hover" type="button">Chutar</button>
+      <p class="erro"></p>
+      <p class="final"></p>
+      <p class="acerto" id="resultado">Você acertou!</p><br>
+      <button id="play_again" class="glow-on-hover" type="button" onclick="chutar()">Jogar novamente</button>
+    </div>
+  </section> -->
+  <section>
+    <div class="container">
+      <h1 class="page-title">Mentalista</h1><br />
+      <p class="page-subtitle">Digite um número de 0 a 10</p>
+      <br>
+      <img src="https://drive.google.com/drive/u/0/my-drive" alt="">
+      <p id="tentativas-label">Número de tentativas:</p>
+      <p id="tentativas"></p>
+      <input type="number" id="chute" />
+      <button type="submit" class="glow-on-hover" onclick="chutar()">Chutar</button>
+      <button id="play_again">Jogar novamente</button>
+      <div class="text-result">
+        <p class="resultado" id="resultado"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="src/javascript/script.js"></script>
 </body>
 
 </html>
